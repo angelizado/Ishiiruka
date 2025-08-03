@@ -1,11 +1,12 @@
 name: PR Builds x64
 
 on:
+  workflow_dispatch:
   push:
     branches:
-        - "**"
+      - "**"
     paths-ignore:
-        - "**.md"
+      - "**.md"
   pull_request:
     branches: [ Dev ]
     paths-ignore:
